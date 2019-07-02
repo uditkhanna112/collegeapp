@@ -1,0 +1,100 @@
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" type="text/css" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/bootstrap.css">
+</head>
+<title>CollegeApp</title>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-fixed">
+  <a class="navbar-brand" href="#"><img src="/assets/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	 <span class="navbar-toggler-icon"></span>
+    
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/admissions">Admission</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-target="#myinquiry" data-toggle="modal">Contact us</a>
+      </li>
+     
+</nav>
+<div class="jumbotron">
+	<div class="container">
+	<h1>Looking to build an Awesome<br> Website?</h1>
+</div>
+</div>
+
+
+<div class="icons">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="/assets/1.png" class="body-image">
+				<h2>Price it</h2>
+				<p>Get in touch for an immediate no obligation quote!</p>
+</div>
+<div class="col-md-4">
+				<img src="/assets/2.png" class="body-image">
+				<h2>Plan it</h2>
+				<p>Plan your work and work your plan!</p>
+</div>
+<div class="col-md-4">
+				<img src="/assets/3.png" class="body-image">
+				<h2>Make it</h2>
+				<p>Plan your work and work your plan</p>
+</div>
+</div>
+</div>
+</div>
+<div class="contact">
+	<div class="container-fluid">
+		<button class="btn" data-target="#myinquiry" data-toggle="modal" >Get in Touch</button>
+		<div class="modal" role="dialog" aria-labelledby="modalId" aria-hidden="true" id="myinquiry">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 id="modalId">We are here to help you</h4></div>
+						<div class="modal-body">
+							<label for="inquiry" id="inq">Your Enquiry: </label>
+							<textarea id="comment" class="form-control" rows="5" id="inquiry" placeholder="Write your query here..." autofocus=""></textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+							<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="abc()">Send</button>
+						</div>
+	</body>
+  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+function abc(){
+var comment = $.trim($("#comment").val());
+console.log(comment);
+if(comment.length<10){
+	alert("Enquiry should be of more den 10 alphabets");
+
+	
+
+}
+else
+alert("Your query is submitted! We will get back to you soon")
+}
+</script>
+	</html>

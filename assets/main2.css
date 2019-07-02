@@ -1,0 +1,43 @@
+body{
+	background: url("/assets/back.jpg")no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+}
+html{
+	overflow-x: hidden;
+}
+
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	padding: 15px;
+	font-family: cursive,sans-serif;
+}
+h4{
+	color: #fff;
+	padding: 10px;
+	font-size: 45px;
+	margin:10px;
+	
+}
+ul li{
+	text-align: center;
+}
+
+li{
+	color: white;
+	padding: 5px;
+	font-size: 35px;
+	text-align: center;
+	font-family: sans-serif;
+}
+.jumbotron{
+	background-color: rgba(0,0,0,0.7);
+	background-size: cover;
+height: 100%;
+	
+}
